@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ian.pakarteh">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.activities.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.activities.MenuActivity" />
+        <activity android:name=".views.activities.KonsultasiActivity" />
+        <activity android:name=".views.activities.HasilKonsultasiActivity" />
+        <activity android:name=".views.activities.BudidayaActivity" />
+        <activity android:name=".views.activities.ProfileActivity" />
+        <activity android:name=".views.activities.HamaPenyakitActivity" />
+        <activity android:name=".views.activities.BantuanActivity" />
+        <activity android:name=".views.activities.BagianKonsultasiActivity" />
+        <activity android:name=".views.activities.SecondKonsultasiActivity" />
+        <activity android:name=".views.activities.FirstKonsultasiActivity" />
+        <activity android:name=".views.activities.ThirdKonsultasiActivity" />
+        <activity android:name=".views.activities.FourthKonsultasiActivity" />
+        <activity android:name=".views.activities.WebViewActivity"></activity>
+    </application>
+
+</manifest>

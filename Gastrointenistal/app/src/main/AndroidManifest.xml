@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dimas.gastrointenistal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.activities.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.DiagnoseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".views.activities.MainDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.DetailDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.BantuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.ResultDiagnoseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.DetailRSActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".views.activities.KategoriRumahSakit" />
+        <activity android:name=".views.activities.TentangActivity"></activity>
+    </application>
+
+</manifest>

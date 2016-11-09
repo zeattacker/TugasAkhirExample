@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.hardy.pakarapel.views.activities.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:id="@+id/img1"
+        android:background="@drawable/ic_apple_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Sistem Pakar\nTanaman Apel"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gastro Intenistal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="g_api_key">AIzaSyAgL_2-g_x0KsqRnGIVw2gSiQEvTHBC2sY</string>
+</resources>

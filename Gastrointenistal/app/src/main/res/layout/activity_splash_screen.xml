@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.dimas.gastrointenistal.views.activities.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/img_icon"
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gastro Intenistal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgLogo"
+        android:id="@+id/txtLogo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:text="Aplikasi Pakar Sistem Pencernaan"
+        android:layout_below="@+id/txtLogo"/>
+
+</RelativeLayout>

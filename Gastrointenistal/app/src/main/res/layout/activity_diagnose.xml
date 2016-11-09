@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_diagnose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dimas.gastrointenistal.views.activities.DiagnoseActivity">
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:id="@+id/topContent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cari gejala ..."
+            android:singleLine="true"
+            android:padding="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:id="@+id/txtSearch"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topContent"
+        android:id="@+id/listGejala"
+        android:layout_above="@+id/bottomContent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/bottomContent"
+        android:padding="@dimen/_15sdp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiagnose"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="Diagnosa Sekarang"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

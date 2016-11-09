@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imgBantuan"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="@dimen/_70sdp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtBantuan"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/txtPenjelasan"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,10 +1,12 @@
 package com.dimas.gastrointenistal.views.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -76,7 +78,7 @@ public class ResultDiagnoseActivity extends AppCompatActivity {
 
     private void setupList(){
         ArrayList<String> resultnya = new ArrayList<>();
-        Set<String> keySet = chains.keySet();
+        final Set<String> keySet = chains.keySet();
         for(String key : keySet){
             float ms = Float.parseFloat(chains.get(key).get(0));
             Log.d("MainApp","ms : " + ms);
@@ -93,6 +95,14 @@ public class ResultDiagnoseActivity extends AppCompatActivity {
 
         ArrayAdapter<String> diagnoseAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, resultnya);
         listView.setAdapter(diagnoseAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(ResultDiagnoseActivity.this, DetailDataActivity.class);
+                i.putExtra("id",(String)keySet.toArray()[position]);
+                startActivity(i);
+            }
+        });
     }
 
     @Override

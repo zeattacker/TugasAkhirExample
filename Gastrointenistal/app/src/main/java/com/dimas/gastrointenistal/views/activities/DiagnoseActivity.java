@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.Button;
@@ -64,7 +65,9 @@ public class DiagnoseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SparseBooleanArray checked = listGejala.getCheckedItemPositions();
-                if(checked.size() <= listGejalas.size()) {
+                Log.d("MainApp","Checked size : " + checked.size());
+                Log.d("MainApp","List Gejala size : " + listGejalas.size());
+                if(checked.size() < listGejalas.size()) {
                     ArrayList<Gejala> selectedItems = new ArrayList<Gejala>();
                     for (int i = 0; i < checked.size(); i++) {
                         int pos = checked.keyAt(i);
